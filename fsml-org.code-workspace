@@ -8,6 +8,10 @@
       "path": "app/cli"
     },
     {
+      "name": "demoapp",
+      "path": "app/demoapp"
+    },
+    {
       "name": "standard",
       "path": "packages/standard"
     },
