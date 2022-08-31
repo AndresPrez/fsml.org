@@ -9,7 +9,7 @@
 
   <homepage>https://fsml.org/</homepage>
 
-  <feed-for interface="https://github.com/TeselaGen/fsml.org/fsml.xml"/>
+  <feed-for interface="https://github.com/AndresPrez/fsml.org/blob/zeroinstall/fsml.xml"/>
 
   <group license="OSI Approved :: GNU Lesser General Public License (LGPL)">
     <command name="deno run" path="fsml.js">
