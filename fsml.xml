@@ -12,7 +12,7 @@
   <feed-for interface="https://raw.githubusercontent.com/AndresPrez/fsml.org/zeroinstall/fsml.xml"/>
 
   <group license="OSI Approved :: GNU Lesser General Public License (LGPL)">
-    <command name="deno run" path="deno-1.2.5">
+    <command name="deno" path="deno-1.2.5">
       <arg>demoapp.js</arg>
       <!-- <runner interface="https://github.com/AndresPrez/fsml.org/blob/zeroinstall/deno-1.2.5" /> -->
     </command>
