@@ -12,11 +12,10 @@
   <feed-for interface="https://github.com/AndresPrez/fsml.org/blob/zeroinstall/fsml.xml"/>
 
   <group license="OSI Approved :: GNU Lesser General Public License (LGPL)">
-    <!-- <command name="deno run" path="fsml.js">
-      <runner interface="https://deno.land/x/install/install.sh">
-        <version not-before="3"/>
-      </runner>
-    </command> -->
+    <command name="deno run" path="pkg/deno-1.2.5">
+      <arg>pkg/demoapp.js</arg>
+      <!-- <runner interface="https://github.com/AndresPrez/fsml.org/blob/zeroinstall/deno-1.2.5" /> -->
+    </command>
 
     <!-- Add additional requirements here.
     <requires interface="..."/>
