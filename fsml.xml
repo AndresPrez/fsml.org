@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<interface xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+  <name>fsml</name>
+  <summary>FSML CLI Tool</summary>
+
+  <description>
+
+  </description>
+
+  <homepage>https://fsml.org/</homepage>
+
+  <feed-for interface="https://github.com/TeselaGen/fsml.org/fsml.xml"/>
+
+  <group license="OSI Approved :: GNU Lesser General Public License (LGPL)">
+    <command name="deno run" path="fsml.js">
+      <runner interface="https://deno.land/x/install/install.sh">
+        <version not-before="3"/>
+      </runner>
+    </command>
+
+    <!-- Add additional requirements here.
+    <requires interface="..."/>
+    -->
+
+    <implementation version="{version}" arch="*-*">
+      <manifest-digest/>
+      <archive href="http://example.com/downloads/myprog-{version}.zip"/>
+    </implementation>
+  </group>
+</interface>
