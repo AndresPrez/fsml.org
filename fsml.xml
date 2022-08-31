@@ -12,19 +12,22 @@
   <feed-for interface="https://github.com/AndresPrez/fsml.org/blob/zeroinstall/fsml.xml"/>
 
   <group license="OSI Approved :: GNU Lesser General Public License (LGPL)">
-    <command name="deno run" path="fsml.js">
+    <!-- <command name="deno run" path="fsml.js">
       <runner interface="https://deno.land/x/install/install.sh">
         <version not-before="3"/>
       </runner>
-    </command>
+    </command> -->
 
     <!-- Add additional requirements here.
     <requires interface="..."/>
     -->
 
-    <implementation version="{version}" arch="*-*">
-      <manifest-digest/>
-      <archive href="http://example.com/downloads/myprog-{version}.zip"/>
+    <implementation version="1.0.0" arch="*-*" released="2022-08-31" id="sha1new=e4e0fba6aeb48afcbbddc4c16d60a3890c1c50d6">
+      <manifest-digest sha256new="SVM5JNPT2TXNOCXYOUCBQC4LSMBRVP2MZBYA4KTLMLNT5SQ5ZEVA"/>
+      <recipe>
+        <file href="https://github.com/AndresPrez/fsml.org/blob/zeroinstall/deno-1.2.5" dest="pkg" executable="true" size="127835"/>
+        <file href="https://github.com/AndresPrez/fsml.org/blob/zeroinstall/demoapp.js" dest="pkg" size="149004"/>
+      </recipe>
     </implementation>
   </group>
 </interface>
